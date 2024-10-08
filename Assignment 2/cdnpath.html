@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice Form with Bootstrap</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="text-center">JavaScript Practice Form</h2>
+    <form id="jsPracticeForm">
+
+        <!-- Multiplication and Division -->
+        <div class="card my-5 border-dark">
+            <div class="card-header">
+                <h3>Multiplication and Division</h3>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="num1">Number 1:</label>
+                    <input type="number" class="form-control" id="num1" name="num1" placeholder="Enter first number">
+                </div>
+                <div class="form-group">
+                    <label for="num2">Number 2:</label>
+                    <input type="number" class="form-control" id="num2" name="num2" placeholder="Enter second number">
+                </div>
+                <button type="button" class="btn btn-dark" onclick="calculate()">Calculate</button>
+            </div>
+        </div>
+
+        <!-- Largest of Three -->
+        <div class="card my-5 border-dark">
+            <div class="card-header">
+                <h3>Largest of Three Numbers</h3>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="num3">Number 1:</label>
+                    <input type="number" class="form-control" id="num3" name="num3" placeholder="Enter first number">
+                </div>
+                <div class="form-group">
+                    <label for="num4">Number 2:</label>
+                    <input type="number" class="form-control" id="num4" name="num4" placeholder="Enter second number">
+                </div>
+                <div class="form-group">
+                    <label for="num5">Number 3:</label>
+                    <input type="number" class="form-control" id="num5" name="num5" placeholder="Enter third number">
+                </div>
+                <button type="button" class="btn btn-dark" onclick="findLargest()">Find Largest</button>
+            </div>
+        </div>
+
+        <!-- Sum of Two Integers -->
+        <div class="card my-5 border-dark">
+            <div class="card-header">
+                <h3>Sum of Two Integers</h3>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="num6">Number 1:</label>
+                    <input type="number" class="form-control" id="num6" name="num6" placeholder="Enter first number">
+                </div>
+                <div class="form-group">
+                    <label for="num7">Number 2:</label>
+                    <input type="number" class="form-control" id="num7" name="num7" placeholder="Enter second number">
+                </div>
+                <button type="button" class="btn btn-dark" onclick="sumIntegers()">Sum</button>
+            </div>
+        </div>
+
+        <!-- Closest to 100 -->
+        <div class="card my-5 border-dark">
+            <div class="card-header">
+                <h3>Closest to 100</h3>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="num8">Number 1:</label>
+                    <input type="number" class="form-control" id="num8" name="num8" placeholder="Enter first number">
+                </div>
+                <div class="form-group">
+                    <label for="num9">Number 2:</label>
+                    <input type="number" class="form-control" id="num9" name="num9" placeholder="Enter second number">
+                </div>
+                <button type="button" class="btn btn-dark" onclick="closestTo100()">Find Closest</button>
+            </div>
+        </div>
+
+        <!-- Extracting First Half -->
+        <div class="card my-5 border-dark">
+            <div class="card-header">
+                <h3>First Half of String</h3>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="string">Enter a string:</label>
+                    <input type="text" class="form-control" id="string" name="string" placeholder="Enter a string">
+                </div>
+                <button type="button" class="btn btn-dark" onclick="firstHalf()">Extract First Half</button>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
